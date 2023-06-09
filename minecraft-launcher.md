@@ -44,7 +44,7 @@ After logging in, run
 ```bash
 groups
 ```
- One of the items it prints out should be "mineuser". If it doesnt show up, restart your computer and check again.
+ One of the items it prints out should be "mineuser". If it doesn't show up, restart your computer and check again.
 
 ## 5) Make a backup!
 **This is the part of the tutorial where I ask you to do a backup of your .minecraft folder. If you mess some things up after this point, you can easilly lose all your minecraft saves!**
@@ -57,7 +57,7 @@ Give the folder to mineuser
 ```bash
 sudo chown -R mineuser:mineuser /home/mineuser/.minecraft/
 ```
-Change the permissions so you Please make sure, you've done all the steps to sandbox the official minecraft launcher before continuing with this tutorial!can edit the folder too
+Change the permissions so you can edit the folder too
 ```bash
 sudo chmod -R g+xrw /home/mineuser/.minecraft/
 ```
@@ -130,4 +130,5 @@ StartupWMClass=minecraft-launcher
 ## 10) Fix your game installations
 You will need to fix any installations that have their game directory outside of .minecraft, as minecraft saves them in absolute paths.
 
-Done! :)<br>If you want to sandbox Lunar Client too, you can continue [here](https://github.com/Mandlemankiller/Sandboxed-Minecraft/blob/main/lunar-client.md).
+Done! :)<br>
+If you want to sandbox Lunar Client too, you can continue [here](https://github.com/Mandlemankiller/Sandboxed-Minecraft/blob/main/lunar-client.md).
