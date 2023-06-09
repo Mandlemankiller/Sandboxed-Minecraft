@@ -103,7 +103,7 @@ If it works, you can close it for now.
 ## 9) Edit the desktop shortcut
 Open ```/usr/share/applications/minecraft-launcher.desktop``` in some editor like [gedit](https://wiki.gnome.org/Apps/Gedit) or [nano](https://www.nano-editor.org/).<br>
 The inside should look something like this:
-```json
+```
 [Desktop Entry]
 Type=Application
 Version=1.0
@@ -117,7 +117,7 @@ StartupWMClass=minecraft-launcher
 ```
 Change ```Exec``` to ```/home/mineuser/.minecraft/launch.sh```<br>
 So the file will end up looking something like this:
-```json
+```
 [Desktop Entry]
 Type=Application
 Version=1.0
