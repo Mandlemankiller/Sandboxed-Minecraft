@@ -95,7 +95,6 @@ If you've done everything correctly, this should start the minecraft launcher!
 /home/mineuser/.minecraft/launch.sh
 ```
 If it works, you can close it for now.
-Please make sure, you've done all the steps to sandbox the official minecraft launcher before continuing with this tutorial!
 ## 9) Edit the desktop shortcut
 Open ```/usr/share/applications/minecraft-launcher.desktop``` in some editor like [gedit](https://wiki.gnome.org/Apps/Gedit) or [nano](https://www.nano-editor.org/).<br>
 The inside should look something like this:
