@@ -3,6 +3,8 @@ A Linux tutorial how to lock minecraft so it doesn't stick its nose where it doe
 
 In this tutorial the name "mineuser" is used for the user who then launches minecraft, but feel free to use any other name. However, if you decide to choose a different name, you will need to stick with it throughout the entire process and replace all the occurences of "mineuser" in this tutorial with your custom user name.
 
+### **For this to work you must have minecraft installed from the [official .deb package from minecraft.net](https://www.minecraft.net/en-us/download)** 
+
 ## 0) Remove others' rights to read users' home directories
 ```bash
 sudo find /home/ -mindepth 1 -maxdepth 1 -exec chmod o-xwr {} +
