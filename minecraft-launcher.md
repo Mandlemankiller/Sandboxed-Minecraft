@@ -22,10 +22,6 @@ sudo passwd -d mineuser
 
 ## 2) Hide the user in the login menu
 This will hide mineuser in the login menu after starting the computer.<br>
-Create a file in /var/lib/AccountsService/mineuser
-```bash
-sudo touch /var/lib/AccountsService/mineuser
-```
 Set mineuser to be a system account
 ```bash
 sudo su -c "printf \"[User]\nSystemAccount=true\" > /var/lib/AccountsService/users/mineuser"
