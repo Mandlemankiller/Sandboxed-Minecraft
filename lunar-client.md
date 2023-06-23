@@ -16,13 +16,13 @@ sudo chmod -R g+xrw /home/mineuser/.lunarclient/
 ```
 Make a symlink
 ```bash
-ln -s /home/mineuser/.lunarclient/ $HOME/.lunarclient/
+ln -s /home/mineuser/.lunarclient/ $HOME/.lunarclient
 ```
 ## 2) Download the AppImage
 [Download the Lunar Client AppImage](https://www.lunarclient.com/download/) and save it to ```/home/mineuser/.lunarclient/```<br>
 Make it executable
 ```bash
-chmod g+x /home/mineuser/.lunarclient/Lunar\ Client-<version>.AppImage
+chmod a+x /home/mineuser/.lunarclient/Lunar\ Client-<version>.AppImage
 ```
 ### **Dont forget to replace \<version> with your Lunar Client version!**
 

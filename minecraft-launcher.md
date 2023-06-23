@@ -63,7 +63,7 @@ sudo chmod -R g+xrw /home/mineuser/.minecraft/
 ```
 Make a symlink
 ```bash
-ln -s /home/mineuser/.minecraft/ $HOME/.minecraft/
+ln -s /home/mineuser/.minecraft/ $HOME/.minecraft
 ```
 *(This will make a shortcut to the .minecraft folder so you don't have to go to the mineusers home allways when you want to visit it)*
 
@@ -86,7 +86,7 @@ xhost -si:localuser:mineuser
 ```
 Make it executable
 ```bash
-chmod g+x /home/mineuser/.minecraft/launch.sh
+chmod a+x /home/mineuser/.minecraft/launch.sh
 ```
 
 ## 8) Start the minecraft launcher!
@@ -126,7 +126,20 @@ StartupWMClass=minecraft-launcher
 ```
 ### **Log out and log back in to apply the change!**
 
-## 10) Fix your game installations
+## 10) Enable audio
+```bash
+sudo usermod -a -G audio mineuser
+```
+Add this to ```/etc/pulse/client.conf```
+```
+auto-connect-localhost = yes
+```
+And add this to ```/etc/pulse/default.pa```
+```
+load-module module-native-protocol-tcp listen=127.0.0.1 auth-ip-acl=127.0.0.1 auth-anonymous=1
+```
+
+## 11) Fix your game installations
 You will need to fix any installations that have their game directory outside of .minecraft, as minecraft saves them in absolute paths.
 
 Done! :)<br>
